@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E9EDAD6B1FE9423B00C079D8 /* TSTableViewSectionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E9EDAD691FE9423A00C079D8 /* TSTableViewSectionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9EDAD741FE9427400C079D8 /* TSTableViewActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EDAD711FE9427400C079D8 /* TSTableViewActionCell.swift */; };
+		E9EDAD751FE9427400C079D8 /* TSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EDAD721FE9427400C079D8 /* TSTableViewController.swift */; };
+		E9EDAD761FE9427400C079D8 /* TSTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EDAD731FE9427400C079D8 /* TSTableViewSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9EDAD661FE9423A00C079D8 /* TSTableViewSectionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSTableViewSectionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EDAD691FE9423A00C079D8 /* TSTableViewSectionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTableViewSectionKit.h; sourceTree = "<group>"; };
 		E9EDAD6A1FE9423B00C079D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EDAD711FE9427400C079D8 /* TSTableViewActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTableViewActionCell.swift; sourceTree = "<group>"; };
+		E9EDAD721FE9427400C079D8 /* TSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTableViewController.swift; sourceTree = "<group>"; };
+		E9EDAD731FE9427400C079D8 /* TSTableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTableViewSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				E9EDAD691FE9423A00C079D8 /* TSTableViewSectionKit.h */,
+				E9EDAD721FE9427400C079D8 /* TSTableViewController.swift */,
+				E9EDAD731FE9427400C079D8 /* TSTableViewSection.swift */,
+				E9EDAD711FE9427400C079D8 /* TSTableViewActionCell.swift */,
 				E9EDAD6A1FE9423B00C079D8 /* Info.plist */,
 			);
 			path = TSTableViewSectionKit;
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					E9EDAD651FE9423A00C079D8 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EDAD761FE9427400C079D8 /* TSTableViewSection.swift in Sources */,
+				E9EDAD751FE9427400C079D8 /* TSTableViewController.swift in Sources */,
+				E9EDAD741FE9427400C079D8 /* TSTableViewActionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +266,7 @@
 		E9EDAD6F1FE9423B00C079D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -262,10 +276,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TSTableViewSectionKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.thomassillmann.TSTableViewSectionKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +290,7 @@
 		E9EDAD701FE9423B00C079D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -283,6 +300,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TSTableViewSectionKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.thomassillmann.TSTableViewSectionKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
